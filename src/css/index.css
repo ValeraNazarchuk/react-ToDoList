@@ -2,24 +2,21 @@
   text-align: center;
 }
 
-.App .item-todo {
+.item-todo {
   padding: 14px;
   width: 250px;
   margin: 0 auto;
   text-align: left;
   margin-top: 15px;
-  background: linear-gradient(
-    90deg,
-    rgba(93, 12, 255, 1) 0%,
-    rgba(155, 0, 250, 1) 100%
-  );
+  background: rgb(9,0,170);
+  background: linear-gradient(90deg, rgba(9,0,170,1) 0%, rgba(167,0,195,1) 99%);
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.App .item-todo .item-text {
+.item-text {
   display: inline-block;
   cursor: pointer;
 }
@@ -33,21 +30,23 @@
 }
 
 .App button {
-  padding: 16px 7px;
+  padding: 15px 7px;
   border: none;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
   outline: none;
-  background: linear-gradient(
-    90deg,
-    rgba(93, 12, 255, 1) 0%,
-    rgba(155, 0, 250, 1) 100%
-  );
+  background: rgb(0 13 151);
+  /* background: linear-gradient(90deg, rgba(9,0,170,1) 0%, rgba(167,0,195,1) 99%); */
   color: #fff;
   text-transform: capitalize;
+  transition: all .5s;
 }
 
-.App .item-todo .item-delete {
+.App button:hover {
+  background:rgb(14, 33, 240);
+}
+
+.item-delete {
   display: inline-block;
   cursor: pointer;
   float: right;
